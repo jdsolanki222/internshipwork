@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <title>Document</title>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     * {
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-family: "Sofia", sans-serif;
     }
 
     .mainflex {
@@ -191,7 +192,7 @@
         justify-content: space-around;
         align-items: center;
         flex: 33.33%;
-        padding: 10px;
+        padding: 20px;
         flex-direction: column;
     }
 
@@ -204,10 +205,33 @@
 
         flex: 40%;
     }
-    .endbox{
+
+    .endbox {
         display: flex;
         background-color: lightgray;
     }
+
+    .endbox1 {
+        flex: 40%;
+    }
+
+    .endbox2 {
+        flex: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .endbox3 {
+        height: 80px;
+        background-color: lightblue;
+        display: flex;
+        align-items: center;
+    }
+    
+.responsive {
+  width: 100%;
+  height: auto;
+}
 </style>
 <div class="headmain">
     <div class="headleft">
@@ -330,10 +354,10 @@
                 </div>
             </div>
             <div class="bottombar2">
-                <div><img src="logo.jpg" alt="" height="300px" width="310px">
+                <div><img src="logo.jpg" alt="" height="300px" width="310px" class="responsive">
                 </div>
-                <div><img src="logo.jpg" alt="" height="300px" width="310px"></div>
-                <div><img src="logo.jpg" alt="" height="300px" width="310px"></div>
+                <div><img src="logo.jpg" alt="" height="300px" width="310px" class="responsive"></div>
+                <div><img src="logo.jpg" alt="" height="300px" width="310px" class="responsive"></div>
             </div>
             <div class="bottombar3">
                 <div>
@@ -379,7 +403,64 @@
                 </form>
             </div>
         </div>
-        <div class="endbox"></div>
+        <div class="endbox">
+            <div class="endbox1">
+                <div style="display: flex; flex-direction: column; padding-left: 30px  flex-start; padding: 20px;">
+                    <div style="font-size: 40px; margin-left: 50px;">
+                        Codetrek
+                    </div>
+                    <div style="font-size: 20px; margin-left: 50px;">
+                        get started now
+                    </div>
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <input type="search" name="Search here..." placeholder="Search here..">
+                        <input type="button" value="Search">
+                    </div>
+                </div>
+            </div>
+            <div class="endbox2">
+                <div
+                    style="display: flex; flex-direction: column; padding-left: 30px; align-items: left; padding: 20px; margin-left: 5px;">
+                    <div><b>Support</b></div>
+                    <div>Help center</div>
+                    <div>Account</div>
+                    <div>Information</div>
+                    <div>Contact us</div>
+
+                </div>
+                <div
+                    style="display: flex; flex-direction: column; padding-left: 30px; align-items: left; padding: 20px; margin-left: 50px;">
+                    <div><b>Support</b></div>
+                    <div>Help center</div>
+                    <div>Account</div>
+                    <div>Information</div>
+                    <div>Contact us</div>
+
+                </div>
+                <div
+                    style="display: flex; flex-direction: column; padding-left: 30px; align-items: left; padding: 20px; margin-left: 50px;">
+                    <div><b>Support</b></div>
+                    <div>Help center</div>
+                    <div>Account</div>
+                    <div>Information</div>
+                    <div>Contact us</div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="endbox3">
+            <div style="flex: 50%; justify-content: center; display: flex;">
+                &copy;Codetrek.inc Copyright and rights reserved
+            </div>
+            <div style="flex:25%; display: flex; justify-content: center;">
+                Terms and conditions
+            </div>
+            <div style="flex:25%; display: flex; justify-content:left; ">
+                Privacy policy
+            </div>
+
+        </div>
 
 
     </div>
