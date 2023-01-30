@@ -5,44 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
-       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     * {
-        font-family: "Sofia", sans-serif;
+        border-radius: 9px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     .mainflex {
         display: flex;
         flex-direction: column;
-        outline: 2px solid red;
+        flex-wrap: wrap;
     }
 
     .headmain {
         display: flex;
-        outline-style: dotted;
-        height: 10%;
+        background-color: #6e42ac;
+        flex-direction: row;
         flex-wrap: wrap;
-
+        color: azure;
+        outline: 2px solid rgb(255, 255, 255);
     }
 
     .headleft {
         display: flex;
         justify-content: space-around;
         flex: 40%;
-        outline-style: double;
-        outline-color: blue;
-        height: fit-content;
+        flex-wrap: wrap;
     }
 
     .headright {
         flex-wrap: wrap;
         display: flex;
         flex: 60%;
-        outline-style: double;
-        outline-color: red;
         justify-content: space-around;
         align-items: center;
     }
@@ -50,23 +48,41 @@
     .flexslide {
 
         display: flex;
-        outline-style: dotted;
-        height: 30%;
-
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #F99417;
+        color: #ffffff;
+        outline: 2px solid rgb(255, 255, 255);
+        
     }
 
-    .flexslide>div {
+    .fsleft {
+        display: flex;
         font-size: larger;
-        padding: 40px;
-        flex: 50%;
-        outline: 1px solid black;
+        outline: 2px solid rgb(255, 255, 255);
+        flex: 20%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
+
+    .fsright {
+        flex: 20%;
+        outline: 2px solid rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
 
     .flexrecord {
         display: flex;
-        outline-style: double;
-        outline-color: blueviolet;
+        outline: 2px solid rgb(255, 255, 255);
+        background-color: #794ab9;
         flex-direction: column;
+        flex-wrap: wrap;
+        color: azure;
 
     }
 
@@ -74,6 +90,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .flexcompany {
@@ -81,38 +99,33 @@
         flex-direction: row;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 
     }
 
     .flexcompany>h4 {
         justify-content: space-around;
         align-items: center;
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 30px;
+        margin-left: 30px;
+        flex-wrap: wrap;
     }
 
     .flexinfo {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-
-    }
-
-    .flexinfo>div {
-        font-size: larger;
-        padding: 40px;
-        flex: 50%;
-        outline: 1px solid black;
+        outline: 2px solid rgb(255, 255, 255);
+        background-color: #f88800;
+        color: #ffffff;
     }
 
     .rating {
         display: flex;
+        flex: 45%;
         flex-direction: column;
+        padding: 30px;
 
-
-    }
-
-    .checked {
-        color: orange;
     }
 
     .r2 {
@@ -128,9 +141,11 @@
     }
 
     .valid {
+
         display: flex;
-        border: 1px solid black;
+        flex: 45%;
         flex-direction: column;
+        padding: 30px;
     }
 
     .imgcontent {
@@ -140,15 +155,27 @@
 
     }
 
+    .checked {
+        color: #5D3891;
+    }
+
+
+
+
     .bottombar {
         display: flex;
-        border: 1px dotted blue;
+        outline: 2px solid rgb(255, 255, 255);
+        
         flex-direction: column;
+
     }
 
     .bottombar1 {
         display: flex;
-        border: 1px solid red;
+        background-color: #794ab9;
+        flex-direction: row;
+        color: #ffffff;
+        outline: 2px solid rgb(255, 255, 255);
 
     }
 
@@ -161,16 +188,21 @@
     }
 
     .bottombar3 {
+        outline: 2px solid rgb(255, 255, 255);
         display: flex;
-
-        border: 1px solid purple;
+        flex-direction: row;
+        background-color: #f88800;
+        color: #ffffff;
     }
 
     .bottombar3>div {
 
+        display: flex;
+        flex-direction: column;
         margin-top: -50px;
         padding: 45px;
         margin-bottom: -40px;
+        flex-wrap: wrap;
     }
 
     .bottombar2>div {
@@ -183,8 +215,9 @@
 
     .bottombar2 {
         display: flex;
-
-        border: 1px solid purple;
+        background-color: #E8E2E2;
+        color: #ffffff;
+        outline: 2px solid rgb(255, 255, 255);
     }
 
     .bottombar2>div {
@@ -198,7 +231,9 @@
 
     .formbar {
         display: flex;
-        background-color: gray;
+        background-color: #8f64ca;
+        color: #ffffff;
+        
     }
 
     .formbar>div {
@@ -209,29 +244,75 @@
     .endbox {
         display: flex;
         background-color: lightgray;
+        flex-wrap: wrap;
     }
 
     .endbox1 {
         flex: 40%;
+        flex-wrap: wrap;
     }
 
     .endbox2 {
         flex: 60%;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .endbox3 {
         height: 80px;
-        background-color: lightblue;
+        background-color: #8c55da;
+        color: #ffffff;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
-    
-.responsive {
-  width: 100%;
-  height: auto;
-}
+
+    .responsive {
+        width: 60%;
+        height: auto;
+    }
+
+    input[type=submit],
+    [type=reset],
+    [type=button] {
+        background-color: #c766ff;
+        color: white;
+        padding: 12px 20px;
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+        margin: 3px;
+    }
+
+    input[type=submit],
+    [type=reset],
+    [type=button]:hover {
+        background-color: #674188;
+    }
+
+    input[type=text],
+    [type=email],
+    [type=password],
+    [type=tel],
+    [type=datetime-local],
+    [type=range],
+    [type=file],
+    [type=search],
+    select,
+    textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    a {
+        text-decoration: none;
+        color: azure;
+    }
 </style>
 <div class="headmain">
     <div class="headleft">
@@ -254,18 +335,20 @@
     <div class="mainflex">
 
         <div class="flexslide">
-            <div>
-                <h3>Salient features:</h3>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                </ul>
-                <input type="button" value="Free Trial">
-                <input type="button" value="View Demo">
+            <div class="fsleft">
+                <div>
+                    <h3>Salient features:</h3>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <input type="button" value="Free Trial">
+                    <input type="button" value="View Demo">
+                </div>
             </div>
-            <div>
-                <img src="logo.png" width="100%" height="300px">
+            <div class="fsright">
+                <img src="logo.png" width="500px" height="350px">
             </div>
         </div>
 
@@ -311,7 +394,7 @@
                 </div>
             </div>
             <div class="valid">
-                <br><br>
+
                 <div class="imgcontent">
                     <h1>🍩</h1><br>
                     <p>
@@ -395,10 +478,10 @@
                     <fieldset>
                         <legend>Registration form</legend>
                         <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <input type="text" id="fname" name="fname" placeholder="enter here..."><br>
                         <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                        <input type="submit" value="Submit">
+                        <input type="text" id="lname" name="lname" placeholder="enter here..."><br><br>
+                        <input type="button" value="Submit">
                     </fieldset>
                 </form>
             </div>
