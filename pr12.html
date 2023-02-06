@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function spanchange() {
+
+            let drop = document.getElementById('drop');
+
+
+            if (drop.value == "default") {
+
+                for (let index = 0; index < 5; index++) {
+
+                    let msg = 'id' + index;
+                    document.getElementById(msg).style.display = 'inline';
+
+                }
+            } else {
+                for (let index = 0; index < 5; index++) {
+
+                    let msg = 'id' + index;
+                    document.getElementById(msg).style.display = 'none';
+
+                }
+                console.log(drop.value);
+                document.getElementById(drop.value).style.display = 'inline';
+
+            }
+        }
+    </script>
+    <style>
+        .form1 {
+            width: 400px;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 33%;
+            margin-top: 5%;
+
+        }
+
+        input[type=button],
+        select {
+            position: relative;
+            margin-left: 9%;
+            width: 60%;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(235, 235, 235);
+            border-radius: 5px;
+        }
+
+        input[type=button]:hover {
+            background-color: rgb(82, 82, 82);
+            color: white;
+
+        }
+
+        h2 {
+            margin-top: 100px;
+            margin-left: 25%;
+            font-family: monospace;
+        }
+
+        form {
+            margin-left: 20%;
+            font-size: large;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+       label {
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form1">
+        <h2>Select your Country</h2>
+        <form action="#" method="post">
+            <br>
+            <select name="drop" id="drop" onchange="spanchange()">
+                <option value="default">Please Select</option>
+                <option value="id0">INDIA</option>
+                <option value="id1">UK</option>
+                <option value="id2">USA</option>
+                <option value="id3">CANADA</option>
+                <option value="id4">JAPAN</option>
+
+            </select><br><br>
+            <span id="id10">you have selected:</span><br><br>
+            <label for="id0" id="id0">INDIA</label><br>
+            <label for="id1" id="id1">UK</label><br>
+            <label for="id2" id="id2">USA</label><br>
+            <label for="id3" id="id3">CANADA</label><br>
+            <label for="id4" id="id4">JAPAN</label><br>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
