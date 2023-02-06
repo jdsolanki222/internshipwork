@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="pr7.js"></script>
+    <style>
+        .form1 {
+            width: 400px;
+            height: 350px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 33%;
+            margin-top: 5%;
+
+        }
+
+       input[type=button] {
+            position: relative;
+            margin-left: 9%;
+            width: 60%;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(235, 235, 235);
+            border-radius: 5px;
+        }
+
+        input[type=button]:hover {
+            background-color: rgb(82, 82, 82);
+            color: white;
+
+        }
+
+        h2 {
+            margin-top: 50px;
+            margin-left: 25%;
+            font-family: monospace;
+        }
+        form{
+            font-size: x-large;
+            font-family: monospace;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="form1">
+        <h2>Select your Region</h2>
+        <form action="#" method="post"> 
+           <table  width="350px" align="center">
+            <tr>
+                <td align='center'>
+                    <label for="lb1"><b>Check All</b></label>  
+                </td>
+                <td align='center'>
+                    <input type="checkbox" name="cbk0" id='lb1' value="chkall" onclick="getallcheck()">
+                </td>
+            </tr>
+            <tr>
+                <td align='center'>
+                    <label for="lb2">USA</label>
+                </td>
+                <td align='center'>
+                    <input type="checkbox" name="cbk1" id='lb2' value="USA" onclick="singlecheck()">
+                </td>
+            </tr> <tr>
+                <td align='center'>
+                    <label for="lb3">UK</label>  
+                </td>
+                <td align='center'>
+                    <input type="checkbox" name="cbk1" id='lb3' value="UK" onclick="singlecheck()">
+                </td>
+            </tr> <tr>
+                <td align='center'>
+                    <label for="lb4">INDIA</label> 
+                </td>
+                <td align='center'>
+                    <input type="checkbox" name="cbk1" id='lb4' value="INDIA" onclick="singlecheck()">
+                </td>
+            </tr> <tr>
+                <td align='center'>
+                    <label for="lb5">ASIA-PACIFIC</label> 
+                </td>
+                <td align='center'>
+                    <input type="checkbox" name="cbk1" id='lb5' value="ASIA-PACIFIC" onclick="singlecheck()">
+                </td>
+            </tr> <tr>
+                <td align='center'>
+                    <label for="lb6">AUSTRALIA</label>  
+                </td>
+                <td align='center'>
+                    <input type="checkbox" name="cbk1" id='lb6' value="AUSTRALIA" onclick="singlecheck()">
+                </td>
+            </tr>
+            <tr>
+                <td align='center'>
+                    <label for="lb7">MIDDLE-EAST</label> 
+                </td>
+                <td align='center'>
+                    <input type="checkbox" name="cbk1" id='lb7' value="MIDDLE-EAST" onclick="singlecheck()">
+                </td>
+            </tr>
+           </table>
+        </form>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+function getallcheck() {
+
+    let cb1 = document.getElementById('lb1');
+    let cball = document.getElementsByName('cbk1');
+
+    if (cb1.checked == true) {
+
+        for (const i in cball) {
+            cball[i].checked = true;
+        }
+        console.log("all checked");
+    }
+    if (cb1.checked == false) {
+
+        for (const i in cball) {
+            cball[i].checked = false;
+        }
+        console.log("all UNcheck");
+    }
+}
+
+function singlecheck() {
+
+    let cb1 = document.getElementById('lb1');
+    let cball = document.getElementsByName('cbk1');
+    let count=0;
+    for (let i=0;i<6;i++) {
+
+        if(cball[i].checked == true){
+            count++;
+            console.log(count);
+        }
+    }
+
+    if(count>=6)
+    {
+        cb1.checked=true;
+    }
+    else{
+        cb1.checked=false;
+    }
+
+}
