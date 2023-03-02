@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: inherit;
+        }
+
+        input[type=text],
+        [type=email],
+        [type=password],
+        [type=tel],
+        [type=datetime-local],
+        [type=range],
+        [type=file],
+        select,
+        textarea {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit],
+        [type=reset] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: left;
+            margin: 3px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            width: 1000px;
+            height:700px;
+            border-radius: 5px;
+            background-color: #9df5a9;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is a basic form with its elements</h3>
+    <form action="#" method="post">
+        <keygen name="rsaPublicKey" keytype="RSA"></keygen>
+        <fieldset>
+            <legend>Personal information</legend>
+            <div class="container">
+            <div class="col-25">FNAME:</div>
+            <div class="col-75"><input type="text" id='a' name="First_name"></div><br>
+            <div class="col-25"> LNAME:</div>
+            <div class="col-75"><input type="text" id='b' name="Last_name"></div><br>
+            <div class="col-25"> GENDER:</div>
+            <div class="col-75"><input type="radio" name="gender" id="gender" value="male">MALE
+                <input type="radio" name="gender" id="gender" value="female">FEMALE</div><br>
+            <div class="col-25"> EMAIL:</div>
+            <div class="col-75"><input type="email" name="email"></div> <br>
+            <div class="col-25"> PASSWORD:</div>
+            <div class="col-75"><input type="password" name="pass"></div><br>
+            <div class="col-25"> CONTACT:</div>
+            <div class="col-75"><input type="tel" name="cno" pattern="^[4-9][0-9]{9}"></div><br>
+            <div class="col-25"> HOBBIES:</div>
+            <div class="col-75"><input type="checkbox" name="cbk1" value="cricket">Cricket
+                <input type="checkbox" name="cbk1" value="Gaming">Gaming
+                <input type="checkbox" name="cbk1" value="Football">Football</div><br>
+            <div class="col-25"><label for="city">CITY:</label></div>
+            <div class="col-75"> <select id="city" name="city">
+                    <option value="abad">Ahmedabad</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Baroda">Baroda</option>
+                    <option value="Anand">Anand</option>
+                </select></div><br>
+            <div class="col-25">RATINGS:</div>
+            <div class="col-75"><input type="range" id="rate" name="rate" min="0" max="100"></div><br>
+            <div class="col-25">ADDRESS:</div>
+            <div class="col-75">
+                <textarea name="addr" rows="5" cols="19">
+                </textarea></div><br>
+
+            <div class="col-25"> <label for="birthday">BIRTHDAY:</label></div>
+            <div class="col-75"><input type="datetime-local" id="birthday" name="birthdaytime"></div><br>
+            <div class="col-25">IMAGE:</div>
+            <div class="col-75"><input type="image" src="logo.png" alt="Submit" width="48" height="48"></div><br>
+            <div class="col-25">UPLOAD FILES:</div>
+            <div class="col-75"><input type="file" id="myfile" name="myfile"></div><br>
+            <br>
+            <div class="col-25">FULLNAME:</div><div class="col-75"><output name="tag" for="a b"></output> </div>
+            <div class="col-25"><input type="reset">
+            <input type="hidden" name="usersession" value="sid1">
+            <input type="submit" value="Submit"></div>
+        </div>
+    </fieldset></form>
+</body>
+</html>
