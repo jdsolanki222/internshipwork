@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            background-color: black;
+        }
+        .wheel {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 10%;
+            margin-left: 35%;
+            border-radius: 50%;
+        }
+
+        .wheel:hover {
+            width: 400px;
+            height: 400px;
+            transition: width 0.8s, height 0.8s;
+            animation-name: circle;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            cursor:wait;
+        }
+
+        @keyframes circle {
+
+
+            0% {
+                background-image: conic-gradient(white 360deg);
+                transform: rotate(0deg);
+
+            }
+
+            14% {
+                background-image: conic-gradient(violet 50deg, white 310deg);
+                transform: rotate(51deg);
+
+            }
+
+            28% {
+                background-image: conic-gradient(violet 50deg, indigo 100deg, white 260deg);
+                transform: rotate(102deg);
+            }
+
+            42% {
+                background-image: conic-gradient(violet 50deg, indigo 100deg, blue 150deg, white 210deg);
+                transform: rotate(153deg);
+            }
+
+            56% {
+                background-image: conic-gradient(violet 50deg, indigo 100deg, blue 150deg, green 200deg, white 160deg);
+                transform: rotate(204deg);
+            }
+
+            70% {
+                background-image: conic-gradient(violet 50deg, indigo 100deg, blue 150deg, green 200deg, yellow 250deg, white 110deg);
+                transform: rotate(255deg);
+            }
+
+            84% {
+                background-image: conic-gradient(violet 50deg, indigo 100deg, blue 150deg, green 200deg, yellow 250deg, orange 300deg, white 60deg);
+                transform: rotate(306deg);
+            }
+
+            100% {
+
+                background-image: conic-gradient(violet 51deg, indigo 102deg, blue 153deg, green 204deg, yellow 255deg, orange 306deg, red 355deg,magenta 360deg);
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle2 {}
+    </style>
+</head>
+
+<body>
+    <div class="wheel">
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
